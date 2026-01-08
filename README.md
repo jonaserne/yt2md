@@ -1,4 +1,4 @@
-# yt2md — YouTube → Markdown Knowledge Library
+# yt2md — YouTube → Markdown Library
 
 A small, automation-first CLI that turns a list of YouTube URLs into:
 - `.srt` captions (prefer YouTube captions if available)
