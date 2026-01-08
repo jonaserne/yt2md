@@ -1,0 +1,26 @@
+project:
+  name: yt2md
+
+paths:
+  input: yt2md/input
+  output: yt2md/output
+  cache: cache
+  logs: logs
+
+youtube:
+  download_audio: true
+  audio_format: mp3
+
+transcription:
+  preferred: youtube_cc      # zuerst versuchen
+  fallback: whisper          # nur wenn kein CC vorhanden
+  whisper:
+    enabled: true
+    model: base
+    language: auto
+    device: auto             # cpu | cuda | auto
+    output_format: srt
+
+markdown:
+  template: default
+  wrap_lines: true

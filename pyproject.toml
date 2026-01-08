@@ -1,0 +1,18 @@
+[project]
+name = "yt2md"
+version = "0.1.0"
+description = "YouTube to Markdown knowledge library with optional Whisper fallback"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Jonas" }
+]
+
+dependencies = []
+
+[project.scripts]
+yt2md = "yt2md.cli:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
